@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.nav-principal .nav-item{
+    margin-top: -10px;
+    margin-left: -15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: -10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+.nav-principal .nav-item:hover{
+    background-color: #FFC943;
+    transition: background-color 0.55s;
+}
+
+.nav-principal .nav-item:hover .nav-link{
+    font-weight: 300px;
+    transition: font-weight 0.55s;
+}

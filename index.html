@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- carregamento do bootstrap-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- carregamento de css externo-->
+    <link rel="stylesheet" href="estilos/principal.css">
+    
+    <title>OPetshop</title>
+</head>
+<body class="bg-light">
+
+
+  <!-- Header principal com o navbar -->
+    <header class="container"></header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav-principal navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-3 mb-sm-0">
+                  <li class="nav-item mt-sm-1">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Veterinária</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Serviços</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Aumente sua família</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Entre em contato</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Como nos achar</a>
+                  </li>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+      <!-- logo do petshop, talvez faça em carousel-->
+
+        <img class="img-fluid rounded-0 border-0" src="assets/images/header_logo.png" alt="Imagem capa Opetshop sempre cuidando da sua família">
+
+        <!-- primeira parte do quem somos-->
+        
+        <div class="quem_somos mb-5">
+            <div class="row">
+                <section class="col-sm-12 col-lg-5 ">
+                    <img class="img_caozin img-fluid" src="assets/images/imagem_quem_somos.png" alt="Foto cachorro no veterinário" srcset="">
+                </section>
+                <section class="col justify-content-center align-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-sm-10">
+                          <h1 class="text-center mt-lg-5 mt-sm-4">Quem Somos?</h1>
+                          <p class="text-center mt-5 lead fs-5 mt-sm-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nesciunt magnam eligendi sit neque aperiam veniam quos blanditiis consequuntur deleniti, perspiciatis facere numquam totam rem odit sint? Doloremque, libero earum?</p>
+                        </div>
+                        <button type="button" class="btn fs-5 mt-4" style="width: 150px; height: 50px; background-color: pink;">
+                          Saiba mais
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- segunda parte com o encontre-nos aqui -->
+        <div class="localizacao">
+          <div class="row">
+              <section class="col justify-content-center align-content-center">
+                  <div class="row justify-content-center">
+                      <div class="col-6 col-sm-10">
+                        <h1 class="text-center mt-lg-5 mt-sm-4">Pertinho de Você</h1>
+                        <p class="text-center mt-5 lead fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nesciunt magnam eligendi sit neque aperiam veniam quos blanditiis consequuntur deleniti, perspiciatis facere numquam totam rem odit sint? Doloremque, libero earum?</p>
+                      </div>
+                      <button type="button" class="btn fs-5 mt-4" style="width: 150px; height: 50px; background-color: pink;">
+                        Saiba mais
+                      </button>
+                  </div>
+              </section>
+              <section class="col-sm-12 col-lg-5 mt-sm-3 ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14968.381598272214!2d-40.300913!3d-20.296318!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb81771761dfcf7%3A0x6fc1f33a66cd45e4!2sPetz%20Vit%C3%B3ria!5e0!3m2!1spt-BR!2sus!4v1739756288772!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+          </div>
+      </div>
+
+
+      <!-- Parte com os cards principais -->
+      <div class="container-fluid mt-5 bg-light">
+        <div class="row align-content-center justify-content-center">
+          <section class="col-12 text-center">
+            <p class="h1 col">
+              Como podemos ajudar?
+            </p>
+          </section>
+          <section class="col-12">
+            <div class="d-flex flex-wrap justify-content-center gap-5 mt-5">
+              <div class="card" style="width: 20rem; padding: 50px;">
+                <img class="card-img-top" src="assets/images/imagem_veterinaria.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Clinica Veterinária</h5>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;padding: 50px;">
+                <img class="card-img-top" src="assets/images/imagem_loja_card.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">PETSHOP</h5>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;padding: 50px;">
+                <img class="card-img-top" src="assets/images/imagem_adocao_card.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">ADOÇÃO</h5>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+
+
+    </main> 
+</body>
+
+</html>
