@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.nav-principal .nav-item{
+.nav-principal > .nav-item{
     margin-top: -10px;
     margin-left: -15px;
     padding-left: 20px;
@@ -21,4 +21,81 @@
 .nav-principal .nav-item:hover .nav-link{
     font-weight: 300px;
     transition: font-weight 0.55s;
+}
+
+.card{
+    box-shadow: 10px 10px  rgba(0, 0, 0, 0.205);
+}
+
+.imagem-card-veterinaria{
+    background-image: url('../assets/images/imagem_veterinaria.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 200;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.199);
+}
+
+.imagem-card-petshop{
+    background-image: url('../assets/images/imagem_loja_card.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 200;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.199);
+}
+
+.imagem-card-adotar{
+    background-image: url('../assets/images/imagem_adocao_card.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 200;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.199);
+}
+
+.botao-card-veterinaria{
+    width: 180px;  
+    height: 50px;  
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, background-color 0.5s ease-in-out, font-size 0.5s ease-in-out,color 0.2s ease-in-out 
+}
+
+.botao-card-petshop{
+    width: 180px;  
+    height: 50px;  
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, background-color 0.5s ease-in-out, font-size 0.5s ease-in-out,color 0.2s ease-in-out 
+}
+
+.botao-card-adotar{
+    width: 180px;  
+    height: 50px;  
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out,color 0.2s ease-in-out 
+}
+
+.botao-card-veterinaria:hover {
+    width: 200px;  
+    height: 70px;  
+    font-size: 20px;
+    color: white;
+    background-color: #8e3b5a !important;
+}
+
+.botao-card-petshop:hover {
+    width: 200px;  
+    height: 70px;
+    font-size: 20px;
+    color: white;  
+    background-color: #634500 !important;
+}
+
+.botao-card-adotar:hover {
+    width: 200px;  
+    height: 70px;
+    font-size: 20px; 
 }
