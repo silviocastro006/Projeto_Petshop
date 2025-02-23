@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+html, body {
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
 .nav-principal > .nav-item{
     margin-top: -10px;
     margin-left: -15px;
@@ -111,7 +117,75 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: 450px;
+}
 
+.salve-mobile {
+    background-image: url('../assets/images/banner_adocao_small.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 300px; /* Pode ajustar conforme necessário */
+}
+
+.botao-quem:hover{
+    background-color: #973344 !important;
+    color: white;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out !important;
+}
+
+.botao-onde:hover{
+    background-color: #973344 !important;
+    color: white;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out !important;
+}
+
+.botao_loja .btn:hover{
+    background-color: #973344 !important;
+    color: white;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out !important;
+}
+
+.cards-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card{
+    margin:0.5em;
+    width: 20%;
+}
+
+.card-img-top{
+    width: 50%;
+}
+
+.redes_sociais{
+    height: 400px !important;
+}
+
+.mensagem_site{
+    width: 50vw;
+    background-color: #3c362a;
+    height: 400px !important;
+    
+}
+
+.redes_icones{
+    width: 50vw;
+    height: 500px !important;
+}
+
+footer{
+    bottom: 0px;
+    color: white!important;
+    height: 30px !important;
+    width: 100vw !important;
+    background-color: #201d16 !important;
+    display: flex!important;
+    justify-content: center!important;
 }

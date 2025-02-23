@@ -7,8 +7,8 @@
     <!-- carregamento do bootstrap-->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-reboot.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
     <!-- carregamento de css externo-->
     <link rel="stylesheet" href="./estilos/principal.css">
@@ -69,7 +69,7 @@
                           <h1 class="text-center mt-lg-5 mt-sm-4">Quem Somos?</h1>
                           <p class="texto-quem text-center mt-5 lead fs-5 mt-sm-2 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nesciunt magnam eligendi sit neque aperiam veniam quos blanditiis consequuntur deleniti, perspiciatis facere numquam totam rem odit sint? Doloremque, libero earum?</p>
                         </div>
-                        <button type="button" class="btn fs-5 mt-4" style="width: 150px; height: 50px; background-color: pink;">
+                        <button type="button" class="botao-quem btn fs-5 mt-4" style="width: 150px; height: 50px; background-color: pink;">
                           Saiba mais
                         </button>
                     </div>
@@ -86,7 +86,7 @@
                         <h1 class="text-center mt-lg-5 mt-sm-4">Onde ficamos?</h1>
                         <p class="texto-quem text-center mt-5 lead fs-5 mt-sm-2 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nesciunt magnam eligendi sit neque aperiam veniam quos blanditiis consequuntur deleniti, perspiciatis facere numquam totam rem odit sint? Doloremque, libero earum?</p>
                       </div>
-                      <button type="button" class="btn fs-5 mt-4" style="width: 150px; height: 50px; background-color: pink;">
+                      <button type="button" class="botao-onde btn fs-5 mt-4" style="width: 150px; height: 50px; background-color: pink;">
                         Saiba mais
                       </button>
                   </div>
@@ -137,7 +137,12 @@
 
 
       <!-- Parte com o anúncio de adoção -->
-      <section class="salve img-fluid" style="background-color: #663f46;"></section>
+      <!-- Banner para telas maiores que 576px -->
+      <section class="salve img-fluid d-none d-lg-block p-2" style="background-color: #663f46;"></section>
+
+      <!-- Banner para telas menores que 576px -->
+      <section class="salve-mobile img-fluid d-block d-lg-none p-2" style="background-color: #663f46;"></section>
+
           <div class="row">
               <section class="col d-flex flex-column justify-content-center">
                   <div class="row justify-content-center">
@@ -145,55 +150,184 @@
                         <h1 class="text-center mt-lg-5 mt-sm-4">AUmente sua familia</h1>
                         <p class="texto-quem text-center mt-5 lead fs-5 mt-sm-2 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nesciunt magnam eligendi sit neque aperiam veniam quos blanditiis consequuntur deleniti, perspiciatis facere numquam totam rem odit sint? Doloremque, libero earum?</p>
                       </div>
-                      <button type="button" class="btn fs-5 mt-4" style="width: 150px; height: 50px; background-color: pink;">
+                      <button type="button" class="btn fs-5 mt-4 mb-5" style="width: 150px; height: 50px; background-color: pink;">
                         Saiba mais
                       </button>
                   </div>
               </section>
-                <section class="col-sm-12 col-lg-7 col">
-                    <img class="img_caozin img-fluid" src="./assets/images/imagem_adocao_banner.png" alt="Foto cachorro no veterinário" srcset="">
-                </section>
-            </section>
-
-          </div>
-      </div>
-
-
+              <section class="col-sm-12 cold-md-6 col-lg-7">
+                  <img class="img_caozin img-fluid" src="./assets/images/imagem_adocao_banner.png" alt="Foto cachorro no veterinário" srcset="">
+              </section>
+      </section>
 
       <!-- Parte com os cards da loja -->
-      <div class="container-fluid">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
+      <div class="container-fluid d-flex flex-column justify-content-center align-content-center align-items-center" style="background-color: #ffc943; height: 500px;">
+        <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner mb-5">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="assets/images/imagem_veterinaria.png" alt="First slide">
+              <div class="cards-wrapper d-flex justify-content-center align-content-center align-items-center">
+                
+                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center">
+                  <img src="assets/images/imagem_card_loja1.png" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                
+                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center">
+                  <img src="assets/images/imagem_card_loja2.png" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center">
+                  <img src="assets/images/imagem_card_loja3.png" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div> 
+
+              </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/imagem_card_loja3.png" alt="Second slide">
+              <div class="cards-wrapper">
+                
+                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center">
+                  <img src="assets/images/imagem_card_loja1.png" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                
+                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center">
+                  <img src="assets/images/imagem_card_loja2.png" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center">
+                  <img src="assets/images/imagem_card_loja3.png" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div> 
+                
+              </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/imagem_card_loja2.png" alt="Third slide">
+              <div class="cards-wrapper">
+                
+                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center">
+                  <img src="assets/images/imagem_card_loja1.png" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                
+                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center">
+                  <img src="assets/images/imagem_card_loja2.png" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center">
+                  <img src="assets/images/imagem_card_loja3.png" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                
+              </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="false"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+        <div class="botao_loja">
+          <button type="button" class="btn fs-5" style="width: 150px; height: 50px; background-color: rgb(236, 121, 140);">
+            Ir para a Loja
+          </button>
         </div>
       </div>
+      
 
 
 
 
       <!-- Parte com as redes sociais -->
+      <div class="redes_sociais container-fluid d-flex justify-content-center align-items-center h-auto">
 
+        <div class="mensagem_site container-fluid d-flex flex-column justify-content-center align-items-center">
+          <h1></h1>
 
+          <div class="container">
+            <img src="" alt="">
+            <h1></h1>
+          </div>
 
+          <div class="container">
+            <img src="" alt="">
+            <h1></h1>
+          </div>
 
-    </main> 
+          <div class="container">
+            <img src="" alt="">
+            <h1></h1>
+          </div>
+
+        </div>
+        
+
+        <div class="redes_icones container-fluid d-flex flex-column justify-content-center align-items-center">
+          <h1></h1>
+
+          <div class="container">
+            <img src="" alt="">
+            <h1></h1>
+          </div>
+
+          <div class="container">
+            <img src="" alt="">
+            <h1></h1>
+          </div>
+
+          <div class="container">
+            <img src="" alt="">
+            <h1></h1>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
-
+<footer class="footer">
+  <p>Site desenvolvido por Silvio Ricardo</p>
+</footer> 
 </html>
