@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+/*Cores para o site*/
+
+:root
+{
+    --amarelo-principal: #ffc943;
+    --rosa-suave: #f5b0cb;
+    --marrom-pet: #3c362a;
+    --vinho-adocao: #663f46;
+}
+
 html, body {
     overflow-x: hidden;
     width: 100vw;
@@ -185,7 +195,23 @@ footer{
     color: white!important;
     height: 30px !important;
     width: 100vw !important;
-    background-color: #201d16 !important;
+    background-color: var(--marrom-pet) !important;
     display: flex!important;
     justify-content: center!important;
+}
+
+#corpo_final{
+    height: 500px;
+}
+
+
+.botao_envio{
+    background-color: grey;
+    color: white;
+}
+
+.botao_envio:hover{
+    background-color: #b8b8b8 !important;
+    color: black;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out !important;
 }

@@ -7,6 +7,7 @@
     <!-- carregamento do bootstrap-->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-reboot.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
@@ -161,7 +162,8 @@
       </section>
 
       <!-- Parte com os cards da loja -->
-      <div class="container-fluid d-flex flex-column justify-content-center align-content-center align-items-center" style="background-color: #ffc943; height: 500px;">
+      <div class="container-fluid d-flex flex-column justify-content-center align-content-center align-items-center" style="background-color: #ffc943; height: 650px;">
+        <p class="fw-medium fs-1">Precisa comprar algo para o Felix?</p>
         <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-inner mb-5">
             <div class="carousel-item active">
@@ -273,59 +275,46 @@
           </button>
         </div>
       </div>
-      
-
-
-
-
-      <!-- Parte com as redes sociais -->
-      <div class="redes_sociais container-fluid d-flex justify-content-center align-items-center h-auto">
-
-        <div class="mensagem_site container-fluid d-flex flex-column justify-content-center align-items-center">
-          <h1></h1>
-
-          <div class="container">
-            <img src="" alt="">
-            <h1></h1>
-          </div>
-
-          <div class="container">
-            <img src="" alt="">
-            <h1></h1>
-          </div>
-
-          <div class="container">
-            <img src="" alt="">
-            <h1></h1>
-          </div>
-
-        </div>
         
+      <!--Parte de contato com o site-->
+      <div class="final_contato row" id="corpo_final">
 
-        <div class="redes_icones container-fluid d-flex flex-column justify-content-center align-items-center">
-          <h1></h1>
-
-          <div class="container">
-            <img src="" alt="">
-            <h1></h1>
+        <section class="col-6 col-xl-6 col-sm-12 text-center" style="background-color: var(--marrom-pet);">
+          <div class="d-flex flex-row justify-content-center align-items-center gap-3 fs-1 pt-4">
+            <i class="bi bi-envelope" style="color: white; font-size: 200%;"></i>
+            <p class="mb-0" style="color: white;">Nos envie uma mensagem</p>
           </div>
-
-          <div class="container">
-            <img src="" alt="">
-            <h1></h1>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
           </div>
+          <button type="button" class="btn w-100 mt-3 botao_envio">Enviar mensagem</button>
+        </section>
 
-          <div class="container">
-            <img src="" alt="">
-            <h1></h1>
+        <section class="col-6 col-xl-6 col-sm-12 text-center">
+          <div class="d-flex flex-row justify-content-center align-items-center fs-1 mt-5">
+            <p>Nossas Redes sociais</p>
           </div>
+          <div class="d-flex flex-column gap-1 fs-1">
+            <a href="!#"><i class="btn bi bi-whatsapp" style="font-size: 180%;"></i></a>
+            <a href="!#"><i class="btn bi bi-instagram" style="font-size: 180%;"></i></a>
+            <a href="!#"><i class="btn bi bi-facebook" style="font-size: 180%;"></i></a>
+            
+            
+            
+          </div>
+          
+        </section>
 
-        </div>
+        
 
       </div>
 
+      
+
     </main>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
 </body>
 <footer class="footer">
   <p>Site desenvolvido por Silvio Ricardo</p>
