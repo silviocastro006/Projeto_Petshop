@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+/*Cores para o site*/
+
+:root
+{
+    --amarelo-principal: #ffc943;
+    --rosa-suave: #f5b0cb;
+    --marrom-pet: #3c362a;
+    --vinho-adocao: #663f46;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav-principal > .nav-item{
+    margin-top: -10px;
+    margin-left: -15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: -10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+.nav-principal .nav-item:hover{
+    background-color: #FFC943;
+    transition: background-color 0.55s;
+}
+
+.nav-principal .nav-item:hover .nav-link{
+    font-weight: 300px;
+    transition: font-weight 0.55s;
+}
+
+.card{
+    box-shadow: 10px 10px  rgba(0, 0, 0, 0.205);
+}
+
+.imagem-card-veterinaria{
+    background-image: url('../assets/images/imagem_veterinaria.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 200;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.199);
+}
+
+.imagem-card-petshop{
+    background-image: url('../assets/images/imagem_loja_card.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 200;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.199);
+}
+
+.imagem-card-adotar{
+    background-image: url('../assets/images/imagem_adocao_card.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 200;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.199);
+}
+
+
+.botao-card-veterinaria{
+    width: 180px;  
+    height: 50px;  
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.35s ease-in-out,color 0.2s ease-in-out 
+}
+
+.botao-card-petshop{
+    width: 180px;  
+    height: 50px;  
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.35s ease-in-out,color 0.2s ease-in-out 
+}
+
+.botao-card-adotar{
+    width: 180px;  
+    height: 50px;  
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.35s ease-in-out,color 0.2s ease-in-out 
+}
+
+
+.botao-card-veterinaria:hover {
+    width: 200px;  
+    height: 70px;
+    font-size: 25px; 
+}
+
+.botao-card-petshop:hover{
+    width: 200px;  
+    height: 70px;
+    font-size: 25px; 
+}
+
+.botao-card-adotar:hover {
+    width: 200px;  
+    height: 70px;
+    font-size: 25px; 
+}
+
+.texto-quem {
+    text-align: justify !important;
+}
+
+.texto-onde {
+    text-align: justify !important;
+}
+
+.salve{
+    background-image: url('../assets/images/banner_adocao.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 550px;
+}
+
+.salve-mobile {
+    background-image: url('../assets/images/banner_adocao_small.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 400px; /* Pode ajustar conforme necessário */
+}
+
+.botao-quem:hover{
+    background-color: #973344 !important;
+    color: white;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out !important;
+}
+
+.botao-onde:hover{
+    background-color: #973344 !important;
+    color: white;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out !important;
+}
+
+.botao_loja .btn:hover{
+    background-color: #973344 !important;
+    color: white;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out !important;
+}
+
+.cards-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card{
+    margin:0.5em;
+    width: 20%;
+}
+
+.card-img-top{
+    width: 50%;
+}
+
+
+footer{
+    bottom: 0px;
+    color: white!important;
+    height: 30px !important;
+    width: 100vw !important;
+    background-color: var(--marrom-pet) !important;
+    display: flex!important;
+    justify-content: center!important;
+}
+
+#corpo_final{
+    height: 500px;
+}
+
+
+.botao_envio{
+    background-color: grey;
+    color: white;
+}
+
+.botao_envio:hover{
+    background-color: #b8b8b8 !important;
+    color: black;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out !important;
+}
