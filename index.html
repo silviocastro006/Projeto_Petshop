@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPetshop</title>
 
     <!-- carregamento do bootstrap-->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-reboot.css">
@@ -11,300 +13,30 @@
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
-    <!-- carregamento de css externo-->
-    <link rel="stylesheet" href="./estilos/principal.css">
-    
-    <title>OPetshop</title>
 </head>
-<body class="bg-light">
+<body>
 
-
-  <!-- Header principal com o navbar -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
-          <div class="container-fluid">
-            <button class="navbar-toggler mt-sm-3 mb-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="nav-principal navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-3 mb-sm-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand d-lg-none d-xlg-none" href="#">OPetshop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-3">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                   <a class="nav-link" href="#">Veterinária</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="#">Serviços</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Aumente sua família</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Entre em contato</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Como nos achar</a>
-                </li>
+                  <a class="nav-link" href="#">Produtos</a>
+                  <a class="nav-link" href="#">Adoção</a>
+                  <a class="nav-link" href="#">Contato</a>
+                  <a class="nav-link" href="#">Localização</a>
+                </div>
+              </div>
             </div>
-          </div>
-      </nav>
+          </nav>
     </header>
 
-
-    <main>
-      <!-- logo do petshop, talvez faça em carousel-->
-
-        <img class="img-fluid rounded-0 border-0" src="./assets/images/header_logo.png" alt="Imagem capa Opetshop sempre cuidando da sua família">
-
-        <!-- primeira parte do quem somos-->
-        
-        <div class="quem_somos mb-5">
-            <div class="row">
-                <section class="col-sm-12 col-lg-5 col">
-                    <img class="img_caozin img-fluid" src="./assets/images/imagem_quem_somos.png" alt="Foto cachorro no veterinário" srcset="">
-                </section>
-                <section class="col d-flex flex-column justify-content-center">
-                    <div class="row justify-content-center">
-                        <div class="d-flex flex-column align-items-center col-sm-12 col-mb-10 col-lg-12">
-                          <h1 class="text-center mt-lg-5 mt-sm-4">Quem Somos?</h1>
-                          <p class="texto-quem text-center mt-5 lead fs-5 mt-sm-2 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nesciunt magnam eligendi sit neque aperiam veniam quos blanditiis consequuntur deleniti, perspiciatis facere numquam totam rem odit sint? Doloremque, libero earum?</p>
-                        </div>
-                        <button type="button" class="botao-quem btn fs-5 mt-4" style="width: 150px; height: 50px; background-color: pink;">
-                          Saiba mais
-                        </button>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <!-- segunda parte com o encontre-nos aqui -->
-        <div class="onde_estamos mb-5">
-          <div class="row">
-              <section class="col d-flex flex-column justify-content-center">
-                  <div class="row justify-content-center">
-                      <div class="d-flex flex-column align-items-center col-sm-12 col-mb-10 col-lg-12">
-                        <h1 class="text-center mt-lg-5 mt-sm-4">Onde ficamos?</h1>
-                        <p class="texto-quem text-center mt-5 lead fs-5 mt-sm-2 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nesciunt magnam eligendi sit neque aperiam veniam quos blanditiis consequuntur deleniti, perspiciatis facere numquam totam rem odit sint? Doloremque, libero earum?</p>
-                      </div>
-                      <button type="button" class="botao-onde btn fs-5 mt-4" style="width: 150px; height: 50px; background-color: pink;">
-                        Saiba mais
-                      </button>
-                  </div>
-              </section>
-              <section class="d-flex justify-content-center col-sm-12 col-mb col-lg mt-sm-3 ">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14968.381598272214!2d-40.300913!3d-20.296318!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb81771761dfcf7%3A0x6fc1f33a66cd45e4!2sPetz%20Vit%C3%B3ria!5e0!3m2!1spt-BR!2sus!4v1739756288772!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-
-          </div>
-      </div>
-              
-          </div>
-      </div>
-
-      <!-- Parte com os cards principais -->
-      <div class="container-fluid mt-5">
-        <div class="row align-content-center justify-content-center gap-5 pb-5" style="background-color: #eeeeee;" >
-          <section class="col-sm-12 col-mb-12 col-lg-12 text-center" style="background-color: #eeeeee;">
-            <p class="h1 mt-5">
-              Como podemos ajudar?
-            </p>
-          </section>
-            <div class="card p-4 col-sm-12 col-mb-12 col-lg-12 col-xl-4" style="width: 18rem; background-color: #e2b3c5;">
-              <p class="h5 mb-3 text-center fs-4">VETERINARIA</p>
-              <div class="imagem-card-veterinaria"></div>
-              <div class="card-body d-flex justify-content-center align-items-center ">
-                <a href="#" class="btn botao-card-veterinaria d-flex justify-content-center align-items-center" style="background-color: white; font-weight: 500;">Acessar</a>
-              </div>
-            </div>
-            
-            <div class="card p-4 col-sm-12 col-mb-12 col-lg-12 col-xl-4" style="width: 18rem; background-color: #ffc943;">
-              <p class="h5 mb-3 text-center fs-4">PETSHOP</p>
-              <div class="imagem-card-petshop"></div>
-              <div class="card-body d-flex justify-content-center align-items-center ">
-                <a href="#" class="btn botao-card-petshop d-flex justify-content-center align-items-center" style="background-color: white; font-weight: 500;">Acessar</a>
-              </div>
-            </div>
-
-            <div class="card p-4 col-sm-12 col-mb-12 col-lg-12 col-xl-4" style="width: 18rem; background-color: #3c362a;">
-              <p class="h5 mb-3 text-center fs-4" style="color: white;">ADOÇÃO</p>
-              <div class="imagem-card-adotar"></div>
-              <div class="card-body d-flex justify-content-center align-items-center">
-                <a href="#" class="btn botao-card-adotar d-flex justify-content-center align-items-center" style="background-color: white; font-weight: 500;">Acessar</a>
-              </div>
-            </div>
-        </div>
-      </div>
-
-
-      <!-- Parte com o anúncio de adoção -->
-      <!-- Banner para telas maiores que 576px -->
-      <section class="salve img-fluid d-none d-lg-block p-2" style="background-color: #663f46;"></section>
-
-      <!-- Banner para telas menores que 576px -->
-      <section class="salve-mobile img-fluid d-block d-lg-none p-4" style="background-color: #663f46;"></section>
-
-      <div class="row">
-          <section class="col d-flex flex-column justify-content-center">
-              <div class="row justify-content-center">
-                  <div class="d-flex flex-column align-items-center col-sm-12 col-mb-10 col-lg-12">
-                    <h1 class="text-center mt-lg-5 mt-sm-4">AUmente sua familia</h1>
-                    <p class="texto-quem text-center mt-5 lead fs-5 mt-sm-2 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nesciunt magnam eligendi sit neque aperiam veniam quos blanditiis consequuntur deleniti, perspiciatis facere numquam totam rem odit sint? Doloremque, libero earum?</p>
-                  </div>
-                  <button type="button" class="btn fs-5 mt-4 mb-5 botao-quem" style="width: 150px; height: 50px; background-color: pink;">
-                    Saiba mais
-                  </button>
-              </div>
-          </section>
-          <section class="col-sm-12 cold-md-6 col-lg-7">
-              <img class="img_caozin img-fluid" src="./assets/images/imagem_adocao_banner.png" alt="Foto cachorro no veterinário" srcset="">
-          </section>
-        </div>
-
-      <!-- Parte com os cards da loja -->
-      <div class="container-fluid d-flex flex-column justify-content-center align-content-center align-items-center" style="background-color: #ffc943; height: 650px;">
-        <p class="fw-medium fs-1">Precisa comprar algo para o Felix?</p>
-        <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
-          <div class="carousel-inner mb-5">
-            <div class="carousel-item active">
-              <div class="cards-wrapper d-flex justify-content-center align-content-center align-items-center">
-                
-                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center" style="width: 200px;">
-                  <img src="assets/images/imagem_card_loja1.png" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-                
-                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center" style="width: 200px;">
-                  <img src="assets/images/imagem_card_loja2.png" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
-                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center" style="width: 200px;">
-                  <img src="assets/images/imagem_card_loja3.png" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div> 
-
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards-wrapper">
-                
-                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center" style="width: 200px;">
-                  <img src="assets/images/imagem_card_loja1.png" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-                
-                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center" style="width: 200px;">
-                  <img src="assets/images/imagem_card_loja2.png" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
-                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center" style="width: 200px;">
-                  <img src="assets/images/imagem_card_loja3.png" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div> 
-                
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards-wrapper">
-                
-                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center" style="width: 200px;">
-                  <img src="assets/images/imagem_card_loja1.png" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-                
-                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center" style="width: 200px;">
-                  <img src="assets/images/imagem_card_loja2.png" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
-                <div class="card container-fluid d-flex flex-column justify-content-center align-items-center align-content-center" style="width: 200px;">
-                  <img src="assets/images/imagem_card_loja3.png" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-        </div>
-        <div class="botao_loja">
-          <button type="button" class="btn fs-5" style="width: 150px; height: 50px; background-color: rgb(236, 121, 140);">
-            Ir para a Loja
-          </button>
-        </div>
-      </div>
-        
-      <!--Parte de contato com o site-->
-      <div class="final_contato row" id="corpo_final">
-
-        <div class="d-flex flex-row justify-content-center align-items-center gap-3 fs-1 pt-4">
-          <i class="bi bi-envelope" style="color: rgb(0, 0, 0); font-size: 200%;"></i>
-          <p class="mb-0" style="color: rgb(0, 0, 0);">Nos envie uma mensagem</p>
-        </div>
-
-        <div class="container-fluid d-flex justify-content-center align-content-center align-items-center gap-1">
-          <section class="col-6 col-xl-6 col-sm-6 text-center p-5">
-            <div class="form-group d-flex flex-column justify-content-end align-items-end mt-4">
-              <label for="exampleFormControlTextarea1"></label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-            </div>
-            <button type="button" class="btn w-15 mt-3 botao_envio">Enviar mensagem</button>
-          </section>
-          <section class="col-6 col-xl-6 col-sm-6">
-            <div class="d-flex flex-column gap-1 fs-1 justify-content-center align-items-center mt-4">
-              <a href="!#" style="text-decoration: none; color: black;"><i class="btn bi bi-whatsapp" style="font-size: 100%;"></i>(11)99988-1232 </a>
-              <a href="!#" style="text-decoration: none; color: black;"><i class="btn bi bi-instagram" style="font-size: 100%;"></i>@Opetshop</a>
-              <a href="!#" style="text-decoration: none; color: black;"><i class="btn bi bi-facebook" style="font-size: 100%;"></i>@Opetshop</a>
-            </div>
-          </section>
-        </div>
-      </div>
-      <footer class="footer"> 
-        <p>Site desenvolvido por Silvio Ricardo</p>
-      </footer> 
-    </main>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
